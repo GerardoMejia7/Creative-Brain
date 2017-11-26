@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Dashboard</title>
+  <!-- Bootstrap core CSS-->
+  <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+  <link href="css/menu-sidebar.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid nopadding">
+    <div id="wrapper">
+      <div class="overlay"></div>
+      <nav class="navbar navbar-inverse navbar-fixed-top"
+      id="sidebar-wrapper" role="navigation">
+      <ul class="nav sidebar-nav">
+        <li class="sidebar-brand">
+          <a href="#">CreativeBrain</a>
+        </li>
+        <li><a href="#">Esmeralda P&eacute;rez</a></li>
+        <li><a href="#">Josue Mej&iacute;a</a></li>
+        <li><a href="#">Ambar Maradiaga</a></li>      
+      </ul>
+    </nav>
+
+
+    <section id="page-content-wrapper">
+      <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+        <span class="hamb-top"></span>
+        <span class="hamb-middle"></span>
+        <span class="hamb-bottom"></span>
+      </button>
+
+      <article class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <img src="img/foto0.png" class="adaptar img-fluid">
+          </div>
+          <div class="col-md-7">
+            <h1 class="section-heading">Creative Brain</h1>
+            <h4 class="section-heading">Graphic Design Studio</h4>
+            <br>
+            <p class="">Nuestro estudio de Diseño  surgio como una iniciativa de tres estudiantes de Diseño gráfico como una alternativa de trabajo Freelancers en la cual pudieran trabajar juntos en diversos proyectos de Diseño gráfico, ilustraci&oacute;n, diseño de packaging, editorial y otras ramas del diseño.</p>
+            <p class="">En los trabajos de Diseño gráfico que realizamos en nuestro estudio, aplicamos nuestra visión acerca de la comunicación, por medio de conceptos, iconos, símbolos y otros elementos graficos representamos los mensajes que necesitan transmitir las marcas y clientes para las cuales trabajamos.</p>
+            <br>
+
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-4">
+           <div class="card text-center">
+            <img class="adaptar img-fluid" src="img/esmeBN.PNG">
+            <div class="card-body">
+              <h4 class="section-heading">Esmeralda P&eacute;rez</h4>
+              <h6 class="text-muted">Diseñadora Gr&aacute;fica</h6>
+              <p>Actualmente soy estudiante de la carrera de  artes plásticas opción  diseño gráfico en  la Universidad de El Salvador.
+              Los conocimientos que he adquirido durante la carrera han sido variado desde Dibujo,Pintura y los medios digitales.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#">M&aacute;s..</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+         <div class="card text-center">
+          <img class="adaptar img-fluid" src="img/JosueBn.png">
+          <div class="card-body">
+            <h4 class="section-heading">Josu&eacute; Mej&iacute;a</h4>
+            <h6 class="text-muted">Diseñador Gr&aacute;fico</h6>
+            <p class="lead">Soy <a href="#">Josu&eacute; Mej&iacute;a</a>, siempre e destacado por mi perseveracia y mis capacidades, que han sido una caracteristica en mi ADN personal.
+            Desde muy pequeño he sido amante de las caricaturas,los colores y las formas geometricas.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#">M&aacute;s..</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+       <div class="card text-center">
+        <img class="adaptar img-fluid" src="img/ambarBN.png">
+        <div class="card-body">
+          <h4 class="section-heading">Ambar Maradiaga</h4>
+          <h6 class="text-muted">Diseñadora Gr&aacute;fica</h6>
+          <p>Estudiante de la Lic.Artes Plasticas opcion Diseño Gr&aacute;fico
+          en la Universidad de El Salvador 
+          durante mi carrera he adquirido 
+          conocimientos en Diseño Gr&aacute;fico, 
+          ilustraci&oacute;n y fotografia.
+        </p>
+        </div>
+        <div class="card-footer">
+          <a href="#">M&aacute;s...</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</article>
+<br>
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy;</p>
+    <p class="m-0 text-center text-white">Creative Brain 2017</p>
+  </div>
+</footer>
+</section>
+</div>
+</div>
+
+<!-- Bootstrap core JavaScript-->
+<script src="js/jquery/jquery-1.12.4.js"></script>
+<script src="js/bootstrap/bootstrap.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    var trigger = $('.hamburger'),
+    overlay = $('.overlay'),
+    isClosed = false;
+
+    trigger.click(function () {
+      hamburger_cross();      
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {          
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {   
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+    }
+
+    $('[data-toggle="offcanvas"]').click(function () {
+      $('#wrapper').toggleClass('toggled');
+    });  
+  });
+</script> 
+</div>
+</body>
+
+</html>
