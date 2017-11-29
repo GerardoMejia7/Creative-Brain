@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+*{
+	margin:0;
+	padding:0;
+}
+.nopadding{
+	padding: 0px !important;
+}
+.navbar-inverse{
+	background: rgb( 30, 31, 31 ) !important;
+	border: none !important;
+	border-radius: 0px !important;
+}
+
+.nomargin{
+	margin: 0px !important;
+}
+
+ .pull-right{
+ float: right;
+}
+
+@media ( max-width: 768px){
+	.pull-right{  
+	float: left !important;
+	}
+	.w100{
+	width: 100%;
+	height: auto;
+	float: left;
+ }
+	
+}
+
+.active > a{
+	background: rgb(59, 109, 117) !important;
+}
+	ul > li > a{
+	color: rgb( 255, 255, 255 ) !important;
+	font-size: 12pt !important;
+	font-family: Tahoma !important;
+}
+
+.navbar-toggle{
+	background: rgb(59, 109, 117) !important;
+	border: solid 1px rgb( 20, 45, 50 ) !important;
+}
+
+.navbar-nav > li:hover > a{
+	background: rgb(0, 0, 0) !important;
+     
+}
+.navbar{
+	margin-bottom: 0px !important;
+}
+.navbar-brand{
+	margin: 0px !important;
+	padding: 0px !important;
+	margin-left: 10px !important;
+	margin-top: 5px !important;
+}
+article > div > h3{
+	text-align: center !important;
+}
